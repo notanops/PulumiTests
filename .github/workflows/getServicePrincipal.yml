@@ -14,16 +14,6 @@ jobs:
     steps:
     - name: Check out code into the Go module directory
       uses: actions/checkout@v3
-
-    - name: Set up Go 1.19
-      uses: actions/setup-go@v3
-      with:
-        go-version: 1.19
-    
-    - name: Checkout code action
-      uses: actions/checkout@v3
-      with:
-        repository: notanops/GetServicePrincipal
     
     - name: Get service principal
       uses: notanops/GetServicePrincipal@main
