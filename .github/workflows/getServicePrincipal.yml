@@ -20,10 +20,10 @@ jobs:
       with:
         go-version: 1.19
     
-    - name: Checkout code action
-      uses: actions/checkout@v2
-      with:
-        repository: notanops/GetServicePrincipal
+    #- name: Checkout code action
+    #  uses: actions/checkout@v3
+    #  with:
+    #    repository: notanops/GetServicePrincipal
     
     - name: Get service principal
       uses: notanops/GetServicePrincipal@main
