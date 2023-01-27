@@ -25,7 +25,7 @@ jobs:
       with:
         repository: notanops/GetServicePrincipal
     
-    - name: Go example
+    - name: Get service principal
       uses: notanops/GetServicePrincipal@main
       with:
-        who: 'John Doe'
+        stack-name: 'Build'
