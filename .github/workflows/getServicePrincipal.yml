@@ -20,6 +20,10 @@ jobs:
       with:
         repository: notanops/GetServicePrincipal
     
+    - name: What's inside
+      run: ls -a
+      shell: bash
+    
     - name: Get service principal
       uses: notanops/GetServicePrincipal@main
       with:
