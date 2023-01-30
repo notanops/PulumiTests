@@ -1,0 +1,16 @@
+config:
+    az:servicePrincipalName: sp-az-it-apim-build
+    azure-native:servicePrincipalName: sp-az-it-apim-build
+    azure:skipProviderRegistration: 'true'
+    dkk:storage: postgres
+    dkk:subdomain: portal
+    dkk:tld: build.toto
+    info:stack: build
+    info:stackShortName: build
+    keyvault:getSecretUserAssignedIdentityAllow: []
+    redis:minimumTLSVersion: '1.2'
+    redis:publicNetworkAccess: Disabled
+    redis:redisSKU:
+        capacity: 1
+        family: P
+        name: Premium
