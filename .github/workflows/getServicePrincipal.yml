@@ -23,4 +23,4 @@ jobs:
     - name: Get service principal
       uses: notanops/GetServicePrincipal@main
       with:
-        input.stack-name: 'Build'
+        stack-name: 'Build'
