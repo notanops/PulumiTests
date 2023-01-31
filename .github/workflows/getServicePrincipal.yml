@@ -38,11 +38,11 @@ jobs:
       shell: bash
     
     - name: Move getServicePrincipal
-      run: mv tool/main ..
+      run: mv tool/main ../
       shell: bash
       
     - name: What's inside
-      run: ls -a
+      run: ls -a tool
       shell: bash
       
     - name: Get service principal
