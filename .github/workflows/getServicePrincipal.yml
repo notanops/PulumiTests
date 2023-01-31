@@ -23,11 +23,10 @@ jobs:
       run: ls -a
       shell: bash
       
-    - name: Checkout code action
-      uses: actions/checkout@v3
-      with:
-        repository: notanops/GetServicePrincipal
-        path: PulumiTests
+    - name: Install go-task
+      uses: jaxxstorm/action-install-gh-release@v1.5.0
+      with: # Grab the latest version
+        repo: notanops/testbin
         
     - name: Where am I
       run: pwd
