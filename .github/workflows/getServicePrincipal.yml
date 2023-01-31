@@ -20,14 +20,18 @@ jobs:
     - uses: suisei-cn/actions-download-file@v1.3.0
       name: Download the file
       with:
-        url: "https://github.com/notanops/GetServicePrincipal/blob/main/main.go"
+        url: "https://github.com/notanops/GetServicePrincipal/blob/main/getserviceprincipal"
         target: ./
         
     - name: What's inside
       run: ls -a
       shell: bash
         
-    - name: Run script
-      run: go run main.go
+    - name: Make executable
+      run: chmod +x getserviceprincipal
+      shell: bash
+      
+    - name: Run tool
+      run: ./getserviceprincipal
       shell: bash
 
