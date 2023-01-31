@@ -11,8 +11,9 @@ jobs:
     name: Get service principal name from Pulumi config
     runs-on: ubuntu-latest
     steps:
-    - uses: hashicorp/setup-golang@v1
-        
+    - name: Setup Go
+      uses: actions/setup-go@v3
+       
     - name: Checkout Pulumi project
       uses: actions/checkout@v3 
 
