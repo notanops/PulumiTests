@@ -8,7 +8,7 @@ on:
 
 jobs:
   GetServicePrincipal:
-    name: Get service principal name from Pulumi config
+    name: Get service principal
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Pulumi project
