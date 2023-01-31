@@ -21,6 +21,7 @@ jobs:
       uses: giantswarm/install-binary-action@v1.1.0
       with:
         download_url: "https://github.com/notanops/GetServicePrincipal/raw/main/app.tar.gz"
+        toolName: getserviceprincipal
     
     - name: Extract binary
       run: tar -xvzf app.tar.gz
