@@ -37,7 +37,12 @@ jobs:
       run: ls -a
       shell: bash
     
+    - name: Move getServicePrincipal
+      run: mv tool/main ..
+      shell: bash
+      
     - name: Get service principal
       uses: notanops/GetServicePrincipal@main
       with:
         stack-name: 'build'
+      
