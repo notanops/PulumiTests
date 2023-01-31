@@ -17,9 +17,9 @@ jobs:
     - name: Checkout Pulumi project
       uses: actions/checkout@v3 
         
-    - uses: actions/checkout@v3
+    - uses: notanops/GetServicePrincipal
       with:
-        repository: notanops/GetServicePrincipal
+        stack-name: 'build'
         
     - name: What's inside
       run: ls -a
