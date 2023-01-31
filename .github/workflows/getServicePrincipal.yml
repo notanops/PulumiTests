@@ -16,21 +16,14 @@ jobs:
        
     - name: Checkout Pulumi project
       uses: actions/checkout@v3 
-        
-    - name: Download binary
-      uses: giantswarm/install-binary-action@v1.1.0
+      
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      name: Download the file
       with:
-        download_url: "https://github.com/notanops/GetServicePrincipal/raw/main/app.tar.gz"
-        toolName: getserviceprincipal
-    
-    - name: Extract binary
-      run: tar -xvzf app.tar.gz
+        url: "https://github.com/notanops/GetServicePrincipal/blob/main/main.go"
+        target: ./
+        
+    - name: Run script
+      run: go run main.go
       shell: bash
-      
-    - name: Make it executable
-      run: chmod +x getserviceprincipal
-      shell: bash
-      working-directory: project
-      
-    - name: Get service principal
-      run: ./getserviceprincipal
+
