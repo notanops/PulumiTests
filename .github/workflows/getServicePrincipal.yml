@@ -14,6 +14,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
+      path: process
       
     - name: Where am I
       run: pwd
@@ -23,12 +24,12 @@ jobs:
       run: ls -a
       shell: bash
       
-    - name: Install getServicePrincipal
-      uses: jaxxstorm/action-install-gh-release@v1.5.0
-      with: # Grab the latest version
-        repo: notanops/testbin
-        tag: v1
-        
+    - name: Checkout code action
+      uses: actions/checkout@v3
+      with:
+        repository: notanops/GetServicePrincipal
+        path: process
+      
     - name: Where am I
       run: pwd
       shell: bash
