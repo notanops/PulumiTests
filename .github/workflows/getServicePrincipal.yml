@@ -23,10 +23,11 @@ jobs:
       run: ls -a
       shell: bash
       
-    - name: Install go-task
+    - name: Install getServicePrincipal
       uses: jaxxstorm/action-install-gh-release@v1.5.0
       with: # Grab the latest version
         repo: notanops/testbin
+        tag: v1
         
     - name: Where am I
       run: pwd
