@@ -11,9 +11,6 @@ jobs:
     name: Get service principal name from Pulumi config
     runs-on: ubuntu-latest
     steps:
-    - name: Setup Go
-      uses: actions/setup-go@v3
-       
     - name: Checkout Pulumi project
       uses: actions/checkout@v3 
         
@@ -21,7 +18,3 @@ jobs:
       uses: notanops/GetServicePrincipal@main
       with:
         stack-name: 'build'
-        
-    - name: What's inside
-      run: ls -a
-      shell: bash
