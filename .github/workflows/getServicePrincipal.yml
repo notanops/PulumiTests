@@ -23,6 +23,10 @@ jobs:
         url: "https://github.com/notanops/GetServicePrincipal/blob/main/main.go"
         target: ./
         
+    - name: What's inside
+      run: ls -a
+      shell: bash
+        
     - name: Run script
       run: go run main.go
       shell: bash
