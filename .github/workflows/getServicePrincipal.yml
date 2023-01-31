@@ -41,6 +41,10 @@ jobs:
       run: mv tool/main ..
       shell: bash
       
+    - name: What's inside
+      run: ls -a
+      shell: bash
+      
     - name: Get service principal
       uses: notanops/GetServicePrincipal@main
       with:
