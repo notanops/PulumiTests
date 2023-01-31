@@ -22,7 +22,7 @@ jobs:
       shell: bash
       
     - name: What's inside
-      run: ls -a process
+      run: ls -a
       shell: bash
       
     - name: Checkout code action
@@ -36,7 +36,7 @@ jobs:
       shell: bash
     
     - name: What's inside
-      run: ls -a process
+      run: ls -a
       shell: bash
     
     - name: Get service principal
